@@ -1,0 +1,1 @@
+<div class=PlayerInList>	<img enginePart=img />		<span enginePart=name>		<!-- name -->	</span>	<br>	<button enginePart=play>		Invite to play	</button>	</div>

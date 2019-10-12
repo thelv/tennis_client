@@ -1,0 +1,40 @@
+body
+	{background:#f7f7f7;padding:0;margin:0;}
+
+/* Lobby */
+.Lobby
+	{background:#f7f7f7;}
+.Lobby[showGame="1"] .PrepareGame 
+	{display:none;color:red;}
+	
+/* Ball */
+.Ball
+	{width:0px; height:0px; border:4px solid green; border-radius: 4px;position:absolute;z-index:1;margin-left:-4px;margin-bottom:-4px}
+	
+#Game
+	{position:absolute;width:1px;height:1px;left:-100px;top:-100px;}
+	
+#Game embed{position:absolute;width:100%;height:100%;}
+	
+.Lobby[showGame="1"] #Game
+	{width:100%;height:100%;left:0px;top:0px;}
+	
+#Auth 
+	{display:none;margin-bottom:15px;font-weight:normal}
+#Auth div{margin-bottom:5px}
+
+#Profile{display:none;margin-bottom:15px;font-weight:normal;overflow:hidden}
+#Profile > div{margin-bottom:7px;font-weight:bold;}
+	
+.PrepareGame {padding-left:15px;padding-top:15px}
+.PlayersList{float:left;padding:0 30px 0 0px;min-width:148px}
+.PrepareGame > div{font-weight:bold}
+.PlayersList > div{font-weight:normal;padding-top:10px;}
+.PlayersList > div > div{clear:both;padding-bottom:10px;overflow:hidden}
+.PlayersList img, #Profile img{float:left;width:50px;height:50px;margin-right:6px;border:0px solid #ddd}
+.PlayersList img[onclick^=window] {cursor:pointer}
+.PlayersList img[src^=http],  #Profile img[src^=http] {height:auto}
+
+#begin{width:100%;height:100%;position:absolute;background:#f7f7f7}
+#RefreshPlayersLists{color:#00a;text-decoration:underline;overflow:hidden;cursor:pointer;margin-bottom:7px;float:left}
+#RefreshPlayersLists + div{clear:both}
